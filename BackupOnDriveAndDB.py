@@ -4,7 +4,7 @@ import dropbox
 from dropbox.files import WriteMode
 from dropbox.exceptions import ApiError, AuthError
 
-TOKEN = 'eGUfq8CE_bQAAAAAAAAHJJxWZ4DtPM9lp-Beer3Be2b0xQedNV0XkrpXZh5cL7Uc'
+TOKEN = ''
 FOLDER_CHOICE=''
 FOLDER_TO_UPLOAD='/Users/kenneth/Documents/arbeidsplass/forOpplastning/'
 FOLDER_TO_MOVE_UPLOAD_FOLDER='/Users/kenneth/Documents/arbeidsplass/harBlittOpplastet/'
