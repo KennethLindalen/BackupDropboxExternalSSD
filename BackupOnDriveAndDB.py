@@ -3,7 +3,7 @@ import os
 import dropbox
 from dropbox.files import WriteMode
 from dropbox.exceptions import ApiError, AuthError
-test=''
+
 TOKEN = ''
 FOLDER_CHOICE=''
 FOLDER_TO_UPLOAD='/Users/kenneth/Documents/arbeidsplass/forOpplastning/'
