@@ -3,7 +3,7 @@ import os
 import dropbox
 from dropbox.files import WriteMode
 from dropbox.exceptions import ApiError, AuthError
-
+test=''
 TOKEN = ''
 FOLDER_CHOICE=''
 FOLDER_TO_UPLOAD='/Users/kenneth/Documents/arbeidsplass/forOpplastning/'
@@ -12,7 +12,7 @@ DRIVE_PATH='/Volumes/NO\ NAME'
 FILE_LIST=[]
 dbx = dropbox.Dropbox(TOKEN)
 
-#Method for getting files 
+#Lager liste over alle filene i FOLDER_TO_UPLOAD/FOLDER_CHOICE
 def fileLooper():
     for root, dirs, files in os.walk(FOLDER_TO_UPLOAD + FOLDER_CHOICE):  
         for filename in files:
@@ -21,7 +21,7 @@ def fileLooper():
             FILE_LIST.append(filename)
 
 
-#Main upload method
+#MOpplastnings og send til drive metode
 def upload():
     fileLooper()
     print("Upload")
